@@ -1,4 +1,5 @@
 .task__board {
   display: flexbox;
   margin-top: 75px;
+  align-items: center;
 }

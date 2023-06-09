@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import Task from "../Task/Task";
+import Input from "../Input/Input";
 
 const Home = () => {
+  const [tasks, setTasks] = useState([]);
+
+  function addTask(task) {
+    setTasks((prevTasks) => {
+      return [...prevTasks, task];
+    });
+  }
+
   return (
     <div className="task__board">
-      <Task
-        title="Design landing page"
-        description="solution until you have a clear idea of what the problem is collect information. Collect sketches, take.."
-        deadline="9th june"
-      />
-      <Task
-        title="Fixing Bug in ioS app"
-        description="A software bug is a flaw, fault or error in a computer program that causes it to produce..."
-        deadline="9th june"
-      />
+      <Input onAdd={addTask} />
+      {tasks.map((taskItem) => {
+        return (
+          <Task
+            title={taskItem.title}
+            description={taskItem.description}
+            deadline={taskItem.deadline}
+          />
+        );
+      })}
     </div>
   );
 };

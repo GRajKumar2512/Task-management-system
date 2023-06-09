@@ -22,17 +22,6 @@ const Task = ({ title, description, deadline }) => {
         </span>
         <button
           type="button"
-          className="btn btn-success"
-          style={{
-            "--bs-btn-padding-y": ".25rem",
-            "--bs-btn-padding-x": ".5rem",
-            "--bs-btn-font-size": ".5rem",
-          }}
-        >
-          done
-        </button>
-        <button
-          type="button"
           className="btn btn-danger"
           style={{
             "--bs-btn-padding-y": ".25rem",
