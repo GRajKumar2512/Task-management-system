@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import firebase from "../../firebase";
+import "./auth.css";
 
 const RegisterForm = () => {
   const [data, setData] = useState({});
@@ -28,34 +29,38 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleRegistration}>
-      <h3>Sign Up</h3>
-      <div className="mb-3">
-        <label>Email address</label>
-        <input
-          name="email"
-          type="email"
-          className="form-control"
-          placeholder="Enter email"
-          onChange={updateData}
-        />
+    <div className="auth-wrapper">
+      <div className="auth-inner">
+        <form onSubmit={handleRegistration}>
+          <h3>Sign Up</h3>
+          <div className="mb-3">
+            <label>Email address</label>
+            <input
+              name="email"
+              type="email"
+              className="form-control"
+              placeholder="Enter email"
+              onChange={updateData}
+            />
+          </div>
+          <div className="mb-3">
+            <label>Password</label>
+            <input
+              name="password"
+              type="password"
+              className="form-control"
+              placeholder="Enter password"
+              onChange={updateData}
+            />
+          </div>
+          <div className="d-grid">
+            <button type="submit" className="btn btn-primary">
+              Register
+            </button>
+          </div>
+        </form>
       </div>
-      <div className="mb-3">
-        <label>Password</label>
-        <input
-          name="password"
-          type="password"
-          className="form-control"
-          placeholder="Enter password"
-          onChange={updateData}
-        />
-      </div>
-      <div className="d-grid">
-        <button type="submit" className="btn btn-primary">
-          Register
-        </button>
-      </div>
-    </form>
+    </div>
   );
 };
 

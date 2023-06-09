@@ -31,15 +31,13 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="auth-wrapper">
-          <div className="auth-inner">
-            <Routes>
-              <Route exact path="/" element={<Login />} />
-              <Route path="/sign-up" element={<SignUp />} />
-              <Route path="/sign-in" element={<Login />} />
-              <Route path="/home" element={<Home />} />
-            </Routes>
-          </div>
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Login />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/sign-in" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
         </div>
       </div>
     </Router>

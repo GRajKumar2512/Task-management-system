@@ -1,0 +1,58 @@
+.task__container {
+  background-color: white;
+  border: 1px solid aliceblue;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 1rem;
+  width: 20rem;
+  float: left;
+}
+
+.task__title {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.task__description {
+  font-size: 10px;
+  color: #4d4d4d;
+  margin-bottom: 1.2rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.task__deadline {
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: #4d4d4d;
+}
+
+.task__assigned {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: rgb(196, 252, 255);
+  color: rgb(80, 158, 227);
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.btn-success {
+  margin-right: 10px;
+}
+
+.calendar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.task__header {
+  margin-bottom: 10px;
+}
+
+.user {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
