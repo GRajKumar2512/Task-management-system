@@ -3,9 +3,9 @@
   border: 1px solid aliceblue;
   border-radius: 7px;
   padding: 20px;
-  margin: 1rem;
-  width: 20rem;
-  float: left;
+  margin: 4px auto;
+  width: 80%;
+  float: center;
 }
 
 .task__title {
@@ -14,7 +14,7 @@
 }
 
 .task__description {
-  font-size: 10px;
+  font-size: 13px;
   color: #4d4d4d;
   margin-bottom: 1.2rem;
   white-space: pre-wrap;
@@ -38,6 +38,10 @@
 }
 
 .btn-success {
+  margin-right: 10px;
+}
+
+.btn-danger {
   margin-right: 10px;
 }
 

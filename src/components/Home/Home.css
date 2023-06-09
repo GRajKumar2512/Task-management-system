@@ -1,4 +1,4 @@
 .task__board {
-  display: flex;
+  display: flexbox;
   margin-top: 75px;
 }
