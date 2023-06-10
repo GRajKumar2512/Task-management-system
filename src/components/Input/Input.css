@@ -1,4 +1,4 @@
-form {
+form.input__form {
   position: relative;
   width: 80%;
   margin: 30px auto 20px auto;
@@ -8,8 +8,8 @@ form {
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
-form input,
-form textarea {
+form.input__form input,
+form.input__form textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -23,15 +23,15 @@ form textarea {
   font-size: 1.1rem;
 }
 
-form textarea {
+form.input__form textarea {
   font-size: 13px;
 }
 
-.input__deadline {
+form input.input__deadline {
   font-size: 10px;
 }
 
-form button {
+form.input__form button {
   position: absolute;
   right: 18px;
   bottom: -18px;

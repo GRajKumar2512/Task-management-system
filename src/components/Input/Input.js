@@ -18,7 +18,7 @@ const Input = (props) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="input__form" onSubmit={handleSubmit}>
         <input
           name="title"
           className="input__title"
